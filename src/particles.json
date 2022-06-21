@@ -9,17 +9,19 @@
     "events": {
       "onClick": {
         "enable": true,
-        "mode": "push"
+        "mode": "repulse"
       },
       "onHover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "attract"
       },
       "resize": true
     },
     "modes": {
-      "push": {
-        "quantity": 4
+      "attract": {
+        "distance": 200,
+        "duration": 0.4,
+        "factor": 5
       },
       "repulse": {
         "distance": 200,
@@ -39,7 +41,7 @@
       "width": 1
     },
     "collisions": {
-      "enable": true
+      "enable": false
     },
     "move": {
       "direction": "none",
@@ -48,7 +50,7 @@
         "default": "bounce"
       },
       "random": false,
-      "speed": 6,
+      "speed": 2,
       "straight": false
     },
     "number": {
