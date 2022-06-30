@@ -1,0 +1,19 @@
+.navbar {
+  justify-content: space-evenly !important;
+}
+
+.header {
+  background-color: #212529;
+  transition: all 0.3s ease-out 0s !important;
+}
+
+.header-translucid {
+  background-color: #21252970 !important;
+  transition: all 0.4s ease-out 0s !important;
+  box-shadow: 0px 5px 5px 0px #21252970 !important;
+  backdrop-filter: blur(15px) !important;
+}
+
+.header-icon {
+  margin-bottom: 0.375rem;
+}

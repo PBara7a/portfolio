@@ -1,5 +1,15 @@
 footer {
   color: #ffffff;
+
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
+
+.copyright {
+  font-size: 0.6rem;
 }
 
 .social-icon {

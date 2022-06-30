@@ -1,51 +1,55 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import { BsInstagram, BsLinkedin, BsGithub } from "react-icons/bs";
 import "./footer.css";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
+  const iconStyles = {
+    color: "white",
+    background: "transparent",
+    width: "auto",
+    borderStyle: "none",
+  };
+
   return (
     <footer>
       <Container fluid>
         <Row>
-          <Col />
+          <Col md />
           <Col>
-            <h5>Copyright © {year} Paulo Barata</h5>
+            <span className="copyright">Copyright © {year}</span>
           </Col>
           <Col>
-            <ul className="footer-icons">
-              <li className="social-icon">
-                <a
-                  href="https://github.com/pbara7a"
-                  style={{ color: "white" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsGithub />
-                </a>
-              </li>
-              <li className="social-icon">
-                <a
-                  href="https://www.linkedin.com/in/paulo-barata/"
-                  style={{ color: "white" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsLinkedin />
-                </a>
-              </li>
-              <li className="social-icon">
-                <a
-                  href="https://www.instagram.com/p_bara7a/"
-                  style={{ color: "white" }}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <BsInstagram />
-                </a>
-              </li>
-            </ul>
+            <ListGroup horizontal>
+              <ListGroup.Item
+                style={iconStyles}
+                variant="dark"
+                action
+                href="https://github.com/pbara7a"
+                target="_blank"
+              >
+                <BsGithub />
+              </ListGroup.Item>
+
+              <ListGroup.Item
+                style={iconStyles}
+                action
+                href="https://www.linkedin.com/in/paulo-barata/"
+                target="_blank"
+              >
+                <BsLinkedin />
+              </ListGroup.Item>
+
+              <ListGroup.Item
+                style={iconStyles}
+                action
+                href="https://www.instagram.com/p_bara7a/"
+                target="_blank"
+              >
+                <BsInstagram />
+              </ListGroup.Item>
+            </ListGroup>
           </Col>
         </Row>
       </Container>
