@@ -5,6 +5,13 @@ import cvDownload from "../../assets/Paulo-Barata-cv-download.pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import "./resume.css";
 
+const btnCustom = {
+  display: "inline-block",
+  color: "#000",
+  backgroundColor: "#ccff00",
+  border: "none",
+};
+
 const Resume = () => {
   return (
     <Container className="cv-container">
@@ -17,7 +24,12 @@ const Resume = () => {
         />
       </Document>
 
-      <Button href={cvDownload} target="_blank" className="btn-custom mb-2">
+      <Button
+        style={btnCustom}
+        href={cvDownload}
+        target="_blank"
+        className="btn-custom mb-2"
+      >
         Download
       </Button>
     </Container>
