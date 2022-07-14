@@ -1,0 +1,20 @@
+.cv-container {
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.btn-custom,
+.btn-custom:hover,
+.btn-custom:focus {
+  color: #000;
+  background-color: #ccff00;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #ccff0085;
+}
+
+.btn-custom:focus {
+  box-shadow: none !important;
+}

@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <Navbar
       className={navbarClass}
-      fixed="top"
+      sticky="top"
       variant="dark"
       expand="md"
       collapseOnSelect={true}

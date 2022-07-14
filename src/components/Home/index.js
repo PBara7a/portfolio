@@ -11,7 +11,7 @@ const styling = {
 export default function Home() {
   return (
     <section style={styling}>
-      <Container id="home">
+      <Container>
         <Row>
           <Col>
             <h1>Paulo Barata</h1>
