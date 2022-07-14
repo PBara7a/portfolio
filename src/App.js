@@ -21,11 +21,10 @@ function App() {
       <Particles options={particlesOptions} init={particlesInit} />
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
         <Route path="/portfolio" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/portfolio/about" element={<About />} />
+        <Route path="/portfolio/resume" element={<Resume />} />
+        <Route path="/portfolio/projects" element={<Projects />} />
       </Routes>
       <Footer />
     </div>
