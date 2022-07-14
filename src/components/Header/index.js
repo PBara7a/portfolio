@@ -32,7 +32,13 @@ export default function Header() {
       collapseOnSelect={true}
     >
       <Container>
-        <Navbar.Brand>Pb</Navbar.Brand>
+        <Navbar.Brand
+          as={Link}
+          to="/portfolio"
+          onClick={() => setSelected("home")}
+        >
+          Pb
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="navbar">
           <Nav
@@ -40,7 +46,7 @@ export default function Header() {
             onSelect={(selectedLink) => setSelected(selectedLink)}
           >
             <Nav.Item>
-              <Nav.Link as={Link} to="/" eventKey="home">
+              <Nav.Link as={Link} to="/portfolio" eventKey="home">
                 <FaHome
                   className="header-icon"
                   style={{ marginBottom: "0.23rem" }}
@@ -50,19 +56,19 @@ export default function Header() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/about" eventKey="about">
+              <Nav.Link as={Link} to="/portfolio/about" eventKey="about">
                 <FaUserAstronaut className="header-icon" /> About me
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/resume" eventKey="resume">
+              <Nav.Link as={Link} to="/portfolio/resume" eventKey="resume">
                 <FaRegFileAlt className="header-icon" /> Resume
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/projects" eventKey="projects">
+              <Nav.Link as={Link} to="/portfolio/projects" eventKey="projects">
                 <FaLaptopCode className="header-icon" /> Projects
               </Nav.Link>
             </Nav.Item>
