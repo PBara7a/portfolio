@@ -1,0 +1,79 @@
+.about-me-container {
+  margin-top: 5rem;
+  color: #fff;
+}
+
+.intro-card {
+  background-color: #212529;
+  opacity: 0.9;
+  padding: 2%;
+  border-radius: 25px;
+}
+
+.intro-card__interests {
+  font-size: 1.2rem;
+}
+
+.intro-card__interests ul {
+  margin-top: 0.5rem;
+  list-style: none;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.green {
+  color: #ccff00;
+}
+
+.wave {
+  animation: wave 2.3s linear 1s infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+.tool-container {
+  display: grid;
+  place-items: center;
+  background-color: #212529;
+  opacity: 0.9;
+  border-radius: 10px;
+  width: 5rem;
+  height: 5rem;
+}
+
+.tool-container:hover {
+  color: #ccff00;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 4px 1px #ccff0065;
+}
+
+.column-custom {
+  padding: 0 !important;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

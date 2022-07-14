@@ -27,7 +27,7 @@ const Projects = () => {
             <Card.Title style={{ color: "#ccff00" }}>Rustychain</Card.Title>
             <Card.Text>
               Full stack blockchain application. Transactions are validated and
-              recorded. Frontend: React. Backend: Node, Express, PubNub
+              recorded. Frontend: React. Backend: Node, Express, PubNub.
             </Card.Text>
             <Button
               href="https://github.com/PBara7a/rustychain"

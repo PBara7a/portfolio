@@ -25,7 +25,7 @@ export default function Home() {
             <img
               src={codingImg}
               alt="computer"
-              style={{ maxHeight: "450px" }}
+              style={{ maxHeight: "450px", opacity: "0.95" }}
             />
           </Col>
         </Row>
