@@ -1,15 +1,7 @@
-import { Container, Card, Button, Carousel } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import rustychainPreview from "../../assets/rustychain-preview.png";
+import ProjectCard from "./ProjectCard";
 import "./projects.css";
-
-const btnCustom = {
-  display: "inline-block",
-  color: "#000",
-  backgroundColor: "#ccff00",
-  border: "none",
-  margin: "0 0.3rem",
-  width: "5rem",
-};
 
 const Projects = () => {
   return (
@@ -19,38 +11,14 @@ const Projects = () => {
       </h1>
 
       <Container className="d-flex justify-content-center">
-        {/* <Carousel>
-          <Carousel.Item> */}
-        <Card className="projects__card" style={{ width: "18rem" }}>
-          <Card.Img variant="top" src={rustychainPreview} />
-          <Card.Body>
-            <Card.Title style={{ color: "#ccff00" }}>Rustychain</Card.Title>
-            <Card.Text>
-              Full stack blockchain application. Transactions are validated and
-              recorded. Frontend: React. Backend: Node, Express, PubNub.
-            </Card.Text>
-            <Button
-              href="https://github.com/PBara7a/rustychain"
-              target="_blank"
-              style={btnCustom}
-              variant="primary"
-              className="btn-custom"
-            >
-              GitHub
-            </Button>
-            <Button
-              href="https://calm-harbor-77723.herokuapp.com/"
-              target="_blank"
-              style={btnCustom}
-              variant="primary"
-              className="btn-custom"
-            >
-              Demo
-            </Button>
-          </Card.Body>
-        </Card>
-        {/* </Carousel.Item>
-        </Carousel> */}
+        <ProjectCard
+          imgPreview={rustychainPreview}
+          title="Rustychain"
+          description="Full stack blockchain application. Transactions are validated
+                  and recorded on the chain. Frontend: React. Backend: Node, Express, PubNub."
+          github="https://github.com/PBara7a/rustychain"
+          demo="https://calm-harbor-77723.herokuapp.com/"
+        />
       </Container>
     </Container>
   );
