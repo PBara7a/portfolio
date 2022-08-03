@@ -14,14 +14,7 @@ const btnCustom = {
 };
 
 const Resume = () => {
-  const [pdfScale, setPdfScale] = useState(1.5);
-  const vw = document.documentElement.clientWidth;
-
-  useEffect(() => {
-    if (vw < 900) setPdfScale(1);
-    else if (vw < 600) setPdfScale(0.8);
-    else if (vw < 480) setPdfScale(0.6);
-  }, [vw]);
+  const [vw, setVw] = useState(document.documentElement.clientWidth);
 
   return (
     <Container className="cv-container">
@@ -29,7 +22,7 @@ const Resume = () => {
         <Page
           className="mb-3"
           pageNumber={1}
-          scale={pdfScale}
+          scale={vw > 900 ? 1.5 : vw > 600 ? 1 : vw > 480 ? 0.8 : 0.6}
           style={{ backgroundColor: "#000" }}
         />
       </Document>

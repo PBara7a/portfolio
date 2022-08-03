@@ -9,3 +9,7 @@
 .btn-custom:focus {
   box-shadow: none !important;
 }
+
+.pdf {
+  height: 500px;
+}
