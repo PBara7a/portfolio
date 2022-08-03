@@ -1,6 +1,12 @@
 .about-me-container {
-  margin-top: 2rem;
+  margin: 2rem 15%;
+  padding: 0 1rem;
   color: #fff;
+}
+
+.about-me__top-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .intro-card {
@@ -8,6 +14,8 @@
   opacity: 0.9;
   padding: 2%;
   border-radius: 25px;
+  display: grid;
+  place-items: center;
 }
 
 .intro-card__interests {
@@ -21,6 +29,11 @@
   text-align: left;
 }
 
+.about-me__image {
+  max-height: 450px;
+  opacity: 0.95;
+}
+
 .green {
   color: #ccff00;
 }
@@ -29,6 +42,11 @@
   animation: wave 2.3s linear 1s infinite;
   transform-origin: 70% 70%;
   display: inline-block;
+}
+
+.tools-layout {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 }
 
 .tool-container {
@@ -45,10 +63,6 @@
   color: #ccff00;
   transform: scale(1.02);
   box-shadow: 0px 0px 4px 1px #ccff0065;
-}
-
-.column-custom {
-  padding: 0 !important;
 }
 
 @keyframes wave {
@@ -75,5 +89,63 @@
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .intro-card h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .intro-card p {
+    font-size: 1rem;
+  }
+
+  .intro-card ul span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tools-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .tool-container {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .about-me__top-layout {
+    display: inline;
+  }
+
+  .about-me__image {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tools-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tool-container {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tool-container {
+    height: 3rem;
+    width: 3rem;
   }
 }
