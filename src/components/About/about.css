@@ -47,6 +47,7 @@
 .tools-layout {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  place-items: center;
 }
 
 .tool-container {
