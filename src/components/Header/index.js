@@ -34,7 +34,7 @@ export default function Header() {
       <Container>
         <Navbar.Brand
           as={Link}
-          to="/paulo-barata"
+          to="/portfolio"
           onClick={() => setSelected("home")}
         >
           Pb
@@ -46,7 +46,7 @@ export default function Header() {
             onSelect={(selectedLink) => setSelected(selectedLink)}
           >
             <Nav.Item>
-              <Nav.Link as={Link} to="/paulo-barata" eventKey="home">
+              <Nav.Link as={Link} to="/portfolio" eventKey="home">
                 <FaHome
                   className="header-icon"
                   style={{ marginBottom: "0.23rem" }}
@@ -56,23 +56,19 @@ export default function Header() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/paulo-barata/about" eventKey="about">
+              <Nav.Link as={Link} to="/portfolio/about" eventKey="about">
                 <FaUserAstronaut className="header-icon" /> About me
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/paulo-barata/resume" eventKey="resume">
+              <Nav.Link as={Link} to="/portfolio/resume" eventKey="resume">
                 <FaRegFileAlt className="header-icon" /> Resume
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/paulo-barata/projects"
-                eventKey="projects"
-              >
+              <Nav.Link as={Link} to="/portfolio/projects" eventKey="projects">
                 <FaLaptopCode className="header-icon" /> Projects
               </Nav.Link>
             </Nav.Item>
