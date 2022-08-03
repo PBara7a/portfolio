@@ -54,7 +54,7 @@ export default function About() {
       </div>
 
       <h2 className="mb-3 green">My toolbox:</h2>
-      <Container className="mb-5">
+      <div className="mb-5">
         <div className="tools-layout">
           <div className="tool-container">
             <FaJsSquare size={50} />
@@ -88,7 +88,7 @@ export default function About() {
             <FaCss3Alt size={50} />
           </div>
         </div>
-      </Container>
+      </div>
     </Container>
   );
 }
