@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5a45b46a.css",
+    "main.css": "/portfolio/static/css/main.240f984d.css",
     "main.js": "/portfolio/static/js/main.240d54b6.js",
     "pdf.worker.js": "/portfolio/e7e915313973ba1d49f9bb2a1998626e.js",
     "static/media/Paulo-Barata-cv.pdf": "/portfolio/static/media/Paulo-Barata-cv.b580cab749e88e7532be.pdf",
@@ -10,11 +10,11 @@
     "static/media/coding3.svg": "/portfolio/static/media/coding3.8fe6189d2531518a67618d490c310b27.svg",
     "static/media/neon2.woff": "/portfolio/static/media/neon2.8fc17f61f9327d68f12c.woff",
     "index.html": "/portfolio/index.html",
-    "main.5a45b46a.css.map": "/portfolio/static/css/main.5a45b46a.css.map",
+    "main.240f984d.css.map": "/portfolio/static/css/main.240f984d.css.map",
     "main.240d54b6.js.map": "/portfolio/static/js/main.240d54b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a45b46a.css",
+    "static/css/main.240f984d.css",
     "static/js/main.240d54b6.js"
   ]
 }
