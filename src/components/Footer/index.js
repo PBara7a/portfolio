@@ -15,30 +15,24 @@ export default function Footer() {
           </Col>
           <Col>
             <div className="socials-container">
-              <div
-                variant="dark"
-                action
-                href="https://github.com/pbara7a"
-                target="_blank"
-              >
-                <BsGithub />
-              </div>
-
-              <div
-                action
+              <a href="https://github.com/pbara7a" target="_blank">
+                <div>
+                  <BsGithub />
+                </div>
+              </a>
+              <a
                 href="https://www.linkedin.com/in/paulo-barata/"
                 target="_blank"
               >
-                <BsLinkedin />
-              </div>
-
-              <div
-                action
-                href="https://www.instagram.com/p_bara7a/"
-                target="_blank"
-              >
-                <BsInstagram />
-              </div>
+                <div>
+                  <BsLinkedin />
+                </div>
+              </a>
+              <a href="https://www.instagram.com/p_bara7a/" target="_blank">
+                <div>
+                  <BsInstagram />
+                </div>
+              </a>
             </div>
           </Col>
         </Row>

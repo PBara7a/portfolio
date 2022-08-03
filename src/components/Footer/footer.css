@@ -21,6 +21,12 @@ footer {
 .socials-container {
   display: grid;
   grid-template-columns: repeat(3, auto);
+  padding: 0.3rem 0;
+}
+
+.socials-container a,
+.socials-container a:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 280px) {
