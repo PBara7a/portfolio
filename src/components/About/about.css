@@ -23,9 +23,10 @@
 }
 
 .intro-card__interests ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin-top: 0.5rem;
   list-style: none;
-  padding-left: 2rem;
   text-align: left;
 }
 
@@ -120,6 +121,10 @@
   .tool-container {
     margin-bottom: 1rem;
   }
+
+  .intro-card__interests ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -129,6 +134,10 @@
 
   .about-me__image {
     margin-bottom: 1rem;
+  }
+
+  .intro-card__interests ul {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -141,6 +150,10 @@
   .tool-container {
     height: 4rem;
     width: 4rem;
+  }
+
+  .intro-card__interests ul {
+    grid-template-columns: 1fr;
   }
 }
 

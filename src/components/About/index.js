@@ -29,23 +29,23 @@ export default function About() {
             <span className="green">Belfast, UK</span>.
           </h2>
           <br />
-          <p className="intro-card__interests">
-            My main interests outside of coding are:
+          <div className="intro-card__interests">
+            <p>My main interests outside of coding are:</p>
             <ul>
               <li>
-                <span className="green">&#9856;</span> Travelling
+                <span className="green">&#9856;</span> Technology
               </li>
               <li>
-                <span className="green">&#9857;</span> Hiking
+                <span className="green">&#9857;</span> Crypto
               </li>
               <li>
-                <span className="green">&#9858;</span> Football
+                <span className="green">&#9858;</span> Blockchain
               </li>
               <li>
-                <span className="green">&#9859;</span> Video Games
+                <span className="green">&#9859;</span> Gaming
               </li>
             </ul>
-          </p>
+          </div>
         </div>
 
         <div>
