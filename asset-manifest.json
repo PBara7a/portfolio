@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.585c4771.css",
-    "main.js": "/portfolio/static/js/main.3a9f89d8.js",
+    "main.js": "/portfolio/static/js/main.7761233c.js",
     "pdf.worker.js": "/portfolio/e7e915313973ba1d49f9bb2a1998626e.js",
     "static/media/rustychain.jpg": "/portfolio/static/media/rustychain.f39930ab5b4b5d333346.jpg",
+    "static/media/chat.jpg": "/portfolio/static/media/chat.fe79bb38c759fb6725e4.jpg",
     "static/media/Paulo-Barata-cv.pdf": "/portfolio/static/media/Paulo-Barata-cv.cf115e6a390238934557.pdf",
     "static/media/Paulo-Barata-cv-download.pdf": "/portfolio/static/media/Paulo-Barata-cv-download.ecc1f3dab75a0b61924f.pdf",
-    "static/media/chat.jpg": "/portfolio/static/media/chat.6a9305e5b21106831212.jpg",
     "static/media/forest.svg": "/portfolio/static/media/forest.2a8fdc1cffcf61d3d7a40412b5ceb6be.svg",
     "static/media/coding3.svg": "/portfolio/static/media/coding3.8fe6189d2531518a67618d490c310b27.svg",
     "static/media/neon2.woff": "/portfolio/static/media/neon2.8fc17f61f9327d68f12c.woff",
     "index.html": "/portfolio/index.html",
     "main.585c4771.css.map": "/portfolio/static/css/main.585c4771.css.map",
-    "main.3a9f89d8.js.map": "/portfolio/static/js/main.3a9f89d8.js.map"
+    "main.7761233c.js.map": "/portfolio/static/js/main.7761233c.js.map"
   },
   "entrypoints": [
     "static/css/main.585c4771.css",
-    "static/js/main.3a9f89d8.js"
+    "static/js/main.7761233c.js"
   ]
 }
