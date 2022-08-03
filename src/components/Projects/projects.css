@@ -21,6 +21,10 @@
   box-shadow: 0 2px 4px 3px #ccff0065;
 }
 
+.projects__card__img {
+  height: 10rem;
+}
+
 .light {
   color: #ccff00;
   font-family: "Neon";

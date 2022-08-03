@@ -15,7 +15,11 @@ export default function Footer() {
           </Col>
           <Col>
             <div className="socials-container">
-              <a href="https://github.com/pbara7a" target="_blank">
+              <a
+                href="https://github.com/pbara7a"
+                target="_blank"
+                rel="noreferer"
+              >
                 <div>
                   <BsGithub />
                 </div>
@@ -23,12 +27,17 @@ export default function Footer() {
               <a
                 href="https://www.linkedin.com/in/paulo-barata/"
                 target="_blank"
+                rel="noreferer"
               >
                 <div>
                   <BsLinkedin />
                 </div>
               </a>
-              <a href="https://www.instagram.com/p_bara7a/" target="_blank">
+              <a
+                href="https://www.instagram.com/p_bara7a/"
+                target="_blank"
+                rel="noreferer"
+              >
                 <div>
                   <BsInstagram />
                 </div>

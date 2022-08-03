@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Container, Button } from "react-bootstrap";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import cv from "../../assets/Paulo-Barata-cv.pdf";
@@ -14,7 +14,7 @@ const btnCustom = {
 };
 
 const Resume = () => {
-  const [vw, setVw] = useState(document.documentElement.clientWidth);
+  const [vw] = useState(document.documentElement.clientWidth);
 
   return (
     <Container className="cv-container">

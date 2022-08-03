@@ -13,7 +13,11 @@ const ProjectCard = ({ imgPreview, title, description, github, server }) => {
   return (
     <div className="card-frame">
       <Card className="projects__card" style={{ width: "18rem" }}>
-        <Card.Img variant="top" src={imgPreview} />
+        <Card.Img
+          variant="top"
+          src={imgPreview}
+          className="projects__card__img"
+        />
         <Card.Body>
           <Card.Title style={{ color: "#ccff00" }}>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
