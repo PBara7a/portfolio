@@ -9,10 +9,22 @@ footer {
 }
 
 .copyright {
+  padding-top: 0.4rem;
   font-size: 0.6rem;
 }
 
-.social-icon {
-  display: inline-block;
-  margin-right: 1rem;
+.copyright-container {
+  display: grid;
+  place-items: center;
+}
+
+.socials-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+@media screen and (max-width: 280px) {
+  .copyright-container {
+    display: none;
+  }
 }
