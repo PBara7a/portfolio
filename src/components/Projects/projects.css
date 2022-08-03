@@ -3,6 +3,10 @@
   margin: 2rem auto;
 }
 
+.card-frame {
+  padding: 2rem;
+}
+
 .projects__card {
   color: #fff;
   background-color: #212529 !important;
@@ -21,7 +25,6 @@
   color: #ccff00;
   font-family: "Neon";
   position: relative;
-  margin-bottom: 3rem;
 }
 
 .light::before {
