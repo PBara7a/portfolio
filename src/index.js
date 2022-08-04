@@ -6,8 +6,8 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <React.StrictMode basename="/portfolio">
+  <BrowserRouter basename="/portfolio">
+    <React.StrictMode>
       <App />
     </React.StrictMode>
   </BrowserRouter>,
