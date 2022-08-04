@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import codingImg from "../../assets/coding3.svg";
-import TypedStuff from "./Typewriter";
+import TypedStuff from "../../utils/Typewriter";
+import "./home.css"
 
 const styling = {
   marginTop: "10rem",
@@ -13,7 +14,7 @@ export default function Home() {
     <section style={styling}>
       <Container className="mb-5">
         <Row>
-          <Col>
+          <Col className="home-intro">
             <h1>Paulo Barata</h1>
             <h2>Full Stack Developer</h2>
             <div className="typed-text">

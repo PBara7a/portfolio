@@ -16,7 +16,6 @@ function App() {
   const particlesInit = useCallback((main) => {
     loadFull(main);
   }, []);
-  console.log(process.env.PUBLIC_URL)
 
   return (
     <div className="App">
