@@ -122,8 +122,8 @@
     margin-bottom: 1rem;
   }
 
-  .intro-card__interests ul {
-    grid-template-columns: 1fr;
+  .intro-card__interests ul li {
+    font-size: 1rem;
   }
 }
 
@@ -134,10 +134,6 @@
 
   .about-me__image {
     margin-bottom: 1rem;
-  }
-
-  .intro-card__interests ul {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -152,14 +148,18 @@
     width: 4rem;
   }
 
-  .intro-card__interests ul {
-    grid-template-columns: 1fr;
+  .intro-card__interests ul li {
+    font-size: 1rem;
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
   .tool-container {
     height: 3rem;
     width: 3rem;
+  }
+
+  .intro-card__interests ul li {
+    font-size: 0.8rem;
   }
 }
