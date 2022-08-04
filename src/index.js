@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <BrowserRouter>
-    <React.StrictMode basename={process.env.PUBLIC_URL}>
+    <React.StrictMode basename="/portfolio">
       <App />
     </React.StrictMode>
   </BrowserRouter>,
