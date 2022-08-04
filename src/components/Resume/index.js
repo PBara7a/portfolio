@@ -24,7 +24,8 @@ const Resume = () => {
 
   return (
     <Container className="cv-container">
-      <Document file={cv} className="d-flex justify-content-center">
+      {/* <Document file={cv} className="d-flex justify-content-center"> */}
+      <Document file={cv} className="document">
         {page === 1 && (
           <Page
             className="mb-3"
@@ -41,31 +42,33 @@ const Resume = () => {
             style={{ backgroundColor: "#000" }}
           />
         )}
+      <div className="resume-buttons">
+        <Button
+          style={btnCustom}
+          href={cvDownload}
+          target="_blank"
+          className="btn-custom mb-2"
+        >
+          Download
+        </Button>
+
+        <Button
+          style={btnCustom}
+          className="btn-custom mb-2 ms-5 me-1"
+          onClick={handleClick}
+        >
+          <AiFillCaretLeft />
+        </Button>
+        <Button
+          style={btnCustom}
+          className="btn-custom mb-2"
+          onClick={handleClick}
+        >
+          <AiFillCaretRight />
+        </Button>
+      </div>
       </Document>
 
-      <Button
-        style={btnCustom}
-        href={cvDownload}
-        target="_blank"
-        className="btn-custom mb-2"
-      >
-        Download
-      </Button>
-
-      <Button
-        style={btnCustom}
-        className="btn-custom mb-2 ms-5 me-1"
-        onClick={handleClick}
-      >
-        <AiFillCaretLeft />
-      </Button>
-      <Button
-        style={btnCustom}
-        className="btn-custom mb-2"
-        onClick={handleClick}
-      >
-        <AiFillCaretRight />
-      </Button>
     </Container>
   );
 };

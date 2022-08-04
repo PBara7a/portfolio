@@ -13,3 +13,12 @@
 .pdf {
   height: 500px;
 }
+
+.resume-buttons {
+  z-index: 1;
+}
+
+.document {
+  display: grid;
+  place-items: center;
+}
