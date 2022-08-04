@@ -1,5 +1,5 @@
 import { Container } from "react-bootstrap";
-import forest from "../../assets/forest.svg";
+import innovation from "../../assets/innovation.svg";
 import "./about.css";
 import {
   FaHtml5,
@@ -49,7 +49,7 @@ export default function About() {
         </div>
 
         <div>
-          <img className="about-me__image" src={forest} alt="forest" />
+          <img className="about-me__image" src={innovation} alt="innovation" />
         </div>
       </div>
 
