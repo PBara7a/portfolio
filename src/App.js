@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+import withRouter from "./utils/withRouter";
 import "./App.css";
 
 function App() {
@@ -21,14 +22,14 @@ function App() {
       <Particles options={particlesOptions} init={particlesInit} />
       <Header />
       <Routes>
-        <Route path="/portfolio" element={<Home />} />
-        <Route path="/portfolio/about" element={<About />} />
-        <Route path="/portfolio/resume" element={<Resume />} />
-        <Route path="/portfolio/projects" element={<Projects />} />
+        <Route path="" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default withRouter(App);
