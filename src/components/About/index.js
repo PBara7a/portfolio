@@ -53,8 +53,10 @@ export default function About() {
         </div>
       </div>
 
-      <h2 className="mb-3 green">My toolbox:</h2>
-      <div className="mb-5">
+      <div className="mb-5 about-me__bottom">
+        <div className="title-wrapper mb-3">
+          <h2 className=" green">My toolbox:</h2>
+        </div>
         <div className="tools-layout">
           <div className="tool-container">
             <FaJsSquare size={50} />
