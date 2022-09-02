@@ -104,6 +104,10 @@
 }
 
 @media screen and (max-width: 1400px) {
+  .about-me__image {
+    max-height: 350px;
+  }
+
   .intro-card h1 {
     font-size: 1.5rem;
   }
@@ -122,10 +126,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .about-me__image {
-    max-height: 350px;
-  }
-
   .tools-layout {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
