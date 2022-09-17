@@ -1,79 +1,98 @@
-.about-me-container {
-  margin: 2rem 15%;
-  padding: 0 1rem;
+#night .about-me-container {
+  width: 100%;
   color: #fff;
-}
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  background: #21252970;
+  box-shadow: 0px 5px 5px 0px #21252970 !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 
-.about-me__top-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 1fr;
+  padding: 3rem 10%;
+  transition: 0.5s;
 }
 
-.intro-card {
-  background-color: #212529;
-  opacity: 0.9;
-  padding: 2%;
-  border-radius: 25px;
+#day .about-me-container {
+  width: 100%;
+  color: #fff;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 3rem 10%;
+}
+
+.about-me__image-container {
+  width: 30vw;
   display: grid;
   place-items: center;
 }
 
-.intro-card__interests {
-  font-size: 1.2rem;
-}
-
-.intro-card__interests ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 0.5rem;
-  list-style: none;
-  text-align: left;
-}
-
 .about-me__image {
   max-height: 450px;
-  opacity: 0.95;
+  border: 3px solid white;
+  outline: 5px solid black;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
-.green {
-  color: #ccff00;
+.about-me__info {
+  display: grid;
+  text-transform: uppercase;
+}
+
+#day .about-me__info h1 {
+  color: #414351;
+}
+
+#night .about-me__info h1 {
+  color: #11ffee;
+}
+
+#day .about-me__info__skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  color: #090e1e;
+}
+
+#night .about-me__info__skill-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.about-me__info__skill-list-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  place-items: start;
+  align-items: center;
+}
+
+.about-me__info__skill-list__icon {
+  transform: scale(0.7);
+}
+
+.about-me__info__skill-list-item p {
+  padding-top: 6px;
+  margin: 0;
 }
 
 .wave {
   animation: wave 2.3s linear 1s infinite;
   transform-origin: 70% 70%;
   display: inline-block;
-}
-
-.tools-layout {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  place-items: center;
-}
-
-.title-wrapper {
-  align-items: center;
-  background-color: #212529;
-  opacity: 0.9;
-  border-radius: 10px;
-  width: 30%;
-  padding: 0.5%;
-}
-
-.tool-container {
-  display: grid;
-  place-items: center;
-  background-color: #212529;
-  opacity: 0.9;
-  border-radius: 10px;
-  width: 5rem;
-  height: 5rem;
-}
-
-.tool-container:hover {
-  color: #ccff00;
-  transform: scale(1.02);
-  box-shadow: 0px 0px 4px 1px #ccff0065;
 }
 
 @keyframes wave {
@@ -103,101 +122,73 @@
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1600px) {
   .about-me__image {
     max-height: 350px;
   }
 
-  .intro-card h1 {
+  #day .about-me__info h1 {
+    font-size: 2rem;
+  }
+
+  #night .about-me__info h1 {
+    font-size: 2rem;
+  }
+
+  .about-me__info__skill-list__icon {
+    transform: scale(0.6);
+  }
+
+  #day .about-me__info__skill-list {
+    font-size: 1rem;
+  }
+
+  #night .about-me__info__skill-list {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #night .about-me-container {
+    grid-template-columns: 1fr;
+  }
+
+  #day .about-me-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-me__image-container {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .about-me__info {
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-me__image {
+    max-height: 250px;
+  }
+
+  #day .about-me__info h1 {
     font-size: 1.5rem;
   }
 
-  .intro-card h2 {
-    font-size: 1.2rem;
+  #night .about-me__info h1 {
+    font-size: 1.5rem;
   }
 
-  .intro-card p {
-    font-size: 1rem;
+  .about-me__info__skill-list__icon {
+    transform: scale(0.5);
   }
 
-  .intro-card ul span {
-    font-size: 0.8rem;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .tools-layout {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .tool-container {
-    margin-bottom: 1rem;
-  }
-
-  .intro-card__interests ul li {
-    font-size: 1rem;
-  }
-
-  .title-wrapper {
-    width: 30%;
-  }
-
-  .title-wrapper h2 {
-    font-size: 1.3rem;
-    padding: 0.3rem;
-  }
-
-  .title-wrapper h2 {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  .about-me__top-layout {
-    display: inline;
-  }
-
-  .about-me__image {
-    margin-bottom: 1rem;
-  }
-
-  .title-wrapper {
-    width: 40%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .tools-layout {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .tool-container {
-    height: 4rem;
-    width: 4rem;
-  }
-
-  .intro-card__interests ul li {
-    font-size: 1rem;
-  }
-
-  .title-wrapper {
-    width: 60%;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .tool-container {
-    height: 3rem;
-    width: 3rem;
-  }
-
-  .intro-card__interests ul li {
+  #day .about-me__info__skill-list {
     font-size: 0.8rem;
   }
 
-  .title-wrapper {
-    width: 70%;
+  #night .about-me__info__skill-list {
+    font-size: 0.8rem;
   }
 }

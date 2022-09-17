@@ -1,0 +1,12 @@
+.typewritter-text {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+#day .typewritter-text {
+  color: #414351;
+}
+
+#night .typewritter-text {
+  color: #11ffee;
+}

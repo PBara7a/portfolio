@@ -3,20 +3,22 @@
   src: local("neon2"), url(./assets/neon2.woff) format("woff");
 }
 
-.App {
-  text-align: center;
-  background-color: #282c34;
-}
-
-#tsparticles {
-  position: fixed;
+#day.App {
   height: 100%;
   width: 100%;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  top: 0;
-  z-index: 0;
+  text-align: center;
+  background: url("./assets/mountains-day.jpg") no-repeat fixed center;
+  background-size: 100% 100%;
+  transition: 0.4s;
+}
+
+#night.App {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: url("./assets/mountains-night.jpg") no-repeat fixed center;
+  background-size: 100% 100%;
+  transition: 0.4s;
 }
 
 /* --------- */

@@ -1,23 +1,13 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-
-const styles = {
-  display: "inline-block",
-  backgroundColor: "#ccff00cf",
-  color: "#000",
-  fontSize: "1.5rem",
-};
+import "./Typewriter.css";
 
 export default function TypedStuff() {
   return (
-    <div style={styles}>
+    <div className="typewritter-text">
       <Typewriter
         options={{
-          strings: [
-            "PERN stack developer",
-            "Problem solver",
-            "Bootcamp graduate",
-          ],
+          strings: ["Open to work", "Eager to learn", "Ready to contribute"],
           autoStart: true,
           loop: true,
           deleteSpeed: "natural",
