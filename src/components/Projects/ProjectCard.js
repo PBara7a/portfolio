@@ -25,7 +25,7 @@ const ProjectCard = ({ imgPreview, title, description, client, server }) => {
                   ? { background: "#11ffee", color: "#000" }
                   : {}
               }
-              href={client}
+              href={server}
               target="_blank"
               variant={theme === "day" ? "light" : "success"}
               className="projects__card__button"
