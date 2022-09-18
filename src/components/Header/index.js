@@ -8,10 +8,12 @@ import {
   FaLaptopCode,
 } from "react-icons/fa";
 import "./header.css";
+import { useTheme } from "../../App";
 
 export default function Header() {
   const [selected, setSelected] = useState("home");
   const [navbarClass, setNavbarClass] = useState("header");
+  const { toggleTheme } = useTheme();
 
   const handleScroll = () => {
     if (window.scrollY >= 20) {
@@ -67,6 +69,9 @@ export default function Header() {
               <Nav.Link as={Link} to="/projects" eventKey="projects">
                 <FaLaptopCode className="header-icon" /> Projects
               </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link onClick={toggleTheme}>Toggle</Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

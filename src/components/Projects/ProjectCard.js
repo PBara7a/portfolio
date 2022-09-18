@@ -1,62 +1,71 @@
 import { Card, Button } from "react-bootstrap";
+import { useTheme } from "../../App";
 
-const ProjectCard = ({ imgPreview, title, description, github, server }) => {
-  const btnCustom = {
-    display: "inline-block",
-    color: "#000",
-    backgroundColor: "#ccff00",
-    border: "none",
-    margin: "0 0.3rem",
-    width: "5rem",
-  };
+const ProjectCard = ({ imgPreview, title, description, client, server }) => {
+  const { theme } = useTheme();
 
   return (
-    <div className="card-frame">
-      <Card className="projects__card" style={{ width: "18rem" }}>
-        <Card.Img
-          variant="top"
-          src={imgPreview}
-          className="projects__card__img"
-        />
-        <Card.Body>
-          <Card.Title style={{ color: "#ccff00" }}>{title}</Card.Title>
-          <Card.Text>{description}</Card.Text>
-          {!server && (
+    <Card className="projects__card">
+      <Card.Img
+        variant="top"
+        src={imgPreview}
+        className="projects__card__img"
+      />
+
+      <Card.Body className="projects__card__body">
+        <Card.Title className="projects__card__title">{title}</Card.Title>
+
+        <Card.Text className="projects__card__desc">{description}</Card.Text>
+
+        <div className="projects__card__buttons">
+          {!client && (
             <Button
-              href={github}
+              style={
+                theme === "night"
+                  ? { background: "#11ffee", color: "#000" }
+                  : {}
+              }
+              href={client}
               target="_blank"
-              style={btnCustom}
-              variant="primary"
-              className="btn-custom"
+              variant={theme === "day" ? "light" : "success"}
+              className="projects__card__button"
             >
               GitHub
             </Button>
           )}
-          {server && (
-            <>
+          {client && (
+            <div className="projects__card__buttons">
               <Button
-                href={github}
+                style={
+                  theme === "night"
+                    ? { background: "#11ffee", color: "#000" }
+                    : {}
+                }
+                href={client}
                 target="_blank"
-                style={btnCustom}
-                variant="primary"
-                className="btn-custom"
+                variant={theme === "day" ? "light" : "success"}
+                className="projects__card__button"
               >
                 Client
               </Button>
               <Button
+                style={
+                  theme === "night"
+                    ? { background: "#11ffee", color: "#000" }
+                    : {}
+                }
                 href={server}
                 target="_blank"
-                style={btnCustom}
-                variant="primary"
-                className="btn-custom"
+                variant={theme === "day" ? "light" : "success"}
+                className="projects__card__button"
               >
                 Server
               </Button>
-            </>
+            </div>
           )}
-        </Card.Body>
-      </Card>
-    </div>
+        </div>
+      </Card.Body>
+    </Card>
   );
 };
 
