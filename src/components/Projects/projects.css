@@ -90,10 +90,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  .projects-container {
-    display: block;
-  }
-
   .projects__card {
     margin: 0 auto 1rem auto;
   }

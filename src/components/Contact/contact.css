@@ -87,6 +87,7 @@
 }
 
 .contact-section__btn {
+  color: #000;
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 50px;
@@ -113,9 +114,13 @@
 }
 
 @media screen and (max-width: 800px) {
+  .contact-section__form {
+    min-width: 95%;
+  }
+
   .contact-section__form input,
   .contact-section__form textarea {
-    font-size: 0.5rem;
+    width: 90%;
   }
 
   .contact-section__btn {

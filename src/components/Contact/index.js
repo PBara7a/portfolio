@@ -39,7 +39,7 @@ const Contact = () => {
       <form
         onSubmit={handleSubmit}
         className="contact-section__form"
-        action="https://formsubmit.co/pbara7a@gmail.com"
+        action="https://formsubmit.co/3a9bcdea19a1796310f5238f5ef4d653"
       >
         <input
           type="text"
