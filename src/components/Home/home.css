@@ -1,3 +1,119 @@
-.home-intro {
-  z-index: 1;
+.home {
+  --main-highlight: #08ff08;
+  --secondary-highlight: #11ffee;
+  height: 100vh;
+  margin-top: 3rem;
+  color: var(--main-highlight);
+  font-weight: 600;
+}
+
+#day .home__name-wrp {
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+#day .home h1 {
+  font-size: 4rem;
+  color: #090e1e;
+}
+
+#night .home h1 {
+  font-size: 4rem;
+  color: var(--main-highlight);
+}
+
+#day .home h2 {
+  color: #414351;
+}
+
+#night .home h2 {
+  color: var(--secondary-highlight);
+}
+
+.btn-container {
+  display: grid;
+  place-items: center;
+}
+
+.custom-btn {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 7%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: var(--secondary-highlight);
+  border: 2px solid var(--secondary-highlight);
+  background-color: #212529;
+  cursor: pointer;
+}
+
+#day .custom-btn {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#night .custom-btn {
+  color: var(--secondary-highlight);
+  border: 2px solid var(--secondary-highlight);
+}
+
+.custom-btn:hover {
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 1400px) {
+  .home {
+    margin-top: 1.5rem;
+  }
+
+  #day .home h1 {
+    font-size: 3rem;
+  }
+
+  #night .home h1 {
+    font-size: 3rem;
+  }
+
+  #day .home h2 {
+    font-size: 1.5rem;
+  }
+
+  #night .home h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home {
+    margin-top: 3rem;
+  }
+
+  #day .home h1 {
+    font-size: 2rem;
+  }
+
+  #night .home h1 {
+    font-size: 2rem;
+  }
+
+  #day .home h2 {
+    font-size: 1.3rem;
+  }
+
+  #night .home h2 {
+    font-size: 1.3rem;
+  }
+
+  .custom-btn {
+    bottom: 10%;
+    height: 60px;
+    width: 60px;
+  }
 }

@@ -1,36 +1,32 @@
-import { Container, Row, Col } from "react-bootstrap";
-import codingImg from "../../assets/coding3.svg";
-import TypedStuff from "../../utils/Typewriter";
-import "./home.css"
+import { Link } from "react-scroll";
+import "./home.css";
 
-const styling = {
-  marginTop: "10rem",
-  color: "#ccff00",
-  fontWeight: 600,
-};
-
-export default function Home() {
+const Home = () => {
   return (
-    <section style={styling}>
-      <Container className="mb-5">
-        <Row>
-          <Col className="home-intro">
-            <h1>Paulo Barata</h1>
-            <h2>Full Stack Developer</h2>
-            <div className="typed-text">
-              <TypedStuff />
-            </div>
-          </Col>
-
-          <Col>
-            <img
-              src={codingImg}
-              alt="computer"
-              style={{ maxHeight: "450px", opacity: "0.95" }}
-            />
-          </Col>
-        </Row>
-      </Container>
+    <section id="home" className="home">
+      <div className="home__name-wrp">
+        <h1 data-text="Paulo Barata" className="neon-light">
+          P
+          <span data-text="a" className="neon-light-faulty">
+            a
+          </span>
+          ulo Barata
+        </h1>
+        <h2 data-text="Full Stack Developer" className="neon-light">
+          Full Stack Devel
+          <span data-text="o" className="neon-light-faulty-secondary">
+            o
+          </span>
+          per
+        </h2>
+      </div>
+      <div className="btn-container">
+        <Link to="about" offset={-150} className="custom-btn">
+          ▼
+        </Link>
+      </div>
     </section>
   );
-}
+};
+
+export default Home;

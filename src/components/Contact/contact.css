@@ -1,0 +1,124 @@
+.contact-section {
+  display: grid;
+  width: 100%;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  background: #21252970;
+  box-shadow: 0px 5px 5px 0px #21252970 !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  margin: 4rem 0;
+  padding: 3rem 10%;
+  transition: 0.5s;
+}
+
+#night .contact-section {
+  color: #fff;
+  background: #21252970;
+  box-shadow: 0px 5px 5px 0px #21252970 !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+#day .contact-section {
+  color: #212529;
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+
+.contact-section__form {
+  display: grid;
+  place-self: center;
+  padding: 2rem;
+  background-color: #212529;
+  opacity: 0.9;
+  margin: 2rem 0;
+  min-width: 50%;
+}
+
+#day .contact-section__form {
+  box-shadow: 0 0 10px 5px #fff;
+}
+
+#night .contact-section__form {
+  box-shadow: 0 0 10px 5px #11ffee;
+}
+
+.contact-section__form input,
+.contact-section__form textarea {
+  display: block;
+  width: 70%;
+  margin: 1rem auto;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  resize: none;
+}
+
+#day .contact-section__form input,
+#day .contact-section__form textarea {
+  border-bottom: 1px solid #ffffff88;
+}
+
+#night .contact-section__form input,
+#night .contact-section__form textarea {
+  border-bottom: 1px solid #11ffee88;
+}
+
+#day .contact-section__form input:focus,
+#day .contact-section__form textarea:focus {
+  border-bottom: 1px solid #fff;
+}
+
+#night .contact-section__form input:focus,
+#night .contact-section__form textarea:focus {
+  border-bottom: 1px solid #11ffee;
+}
+
+.contact-section__form input:focus::placeholder,
+.contact-section__form textarea:focus::placeholder {
+  color: #fff;
+  transition: 0.2s;
+}
+
+.contact-section__btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50px;
+  background: #fff;
+  place-self: end;
+}
+
+.contact-section__btn:hover {
+  background: #aaa;
+  transition: 0.2s;
+}
+
+.contact-section__socials {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.contact-section__socials a,
+.contact-section__socials a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .contact-section__form input,
+  .contact-section__form textarea {
+    font-size: 0.5rem;
+  }
+
+  .contact-section__btn {
+    font-size: 0.6rem;
+  }
+}
