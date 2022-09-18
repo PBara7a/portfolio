@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.949fb43f.css",
-    "main.js": "/portfolio/static/js/main.9853adbe.js",
-    "static/media/workout.jpg": "/portfolio/static/media/workout.5d757bffb907975987e0.jpg",
-    "pdf.worker.js": "/portfolio/e7e915313973ba1d49f9bb2a1998626e.js",
+    "main.css": "/portfolio/static/css/main.3dab2e25.css",
+    "main.js": "/portfolio/static/js/main.06237c46.js",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.ccd0e091f46e560684a0.png",
+    "static/media/workout.jpg": "/portfolio/static/media/workout.77179e95d0b593c2642b.jpg",
+    "static/media/mountains-night.jpg": "/portfolio/static/media/mountains-night.172c410eddd80594515b.jpg",
+    "static/media/mountains-day.jpg": "/portfolio/static/media/mountains-day.36aab69f3c0846b8b051.jpg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.8639084cf019fa02e01c.jpg",
     "static/media/rustychain.jpg": "/portfolio/static/media/rustychain.f39930ab5b4b5d333346.jpg",
     "static/media/chat.jpg": "/portfolio/static/media/chat.fe79bb38c759fb6725e4.jpg",
     "static/media/Paulo-Barata-cv-download.pdf": "/portfolio/static/media/Paulo-Barata-cv-download.bed0a833c5567cda7b50.pdf",
-    "static/media/Paulo-Barata-cv.pdf": "/portfolio/static/media/Paulo-Barata-cv.37885a3637e251967ef0.pdf",
-    "static/media/innovation.svg": "/portfolio/static/media/innovation.94726164081ba4c465dbdbce5632877a.svg",
-    "static/media/coding3.svg": "/portfolio/static/media/coding3.8fe6189d2531518a67618d490c310b27.svg",
     "static/media/neon2.woff": "/portfolio/static/media/neon2.8fc17f61f9327d68f12c.woff",
     "index.html": "/portfolio/index.html",
-    "main.949fb43f.css.map": "/portfolio/static/css/main.949fb43f.css.map",
-    "main.9853adbe.js.map": "/portfolio/static/js/main.9853adbe.js.map"
+    "main.3dab2e25.css.map": "/portfolio/static/css/main.3dab2e25.css.map",
+    "main.06237c46.js.map": "/portfolio/static/js/main.06237c46.js.map"
   },
   "entrypoints": [
-    "static/css/main.949fb43f.css",
-    "static/js/main.9853adbe.js"
+    "static/css/main.3dab2e25.css",
+    "static/js/main.06237c46.js"
   ]
 }
