@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3dab2e25.css",
-    "main.js": "/portfolio/static/js/main.06237c46.js",
+    "main.css": "/portfolio/static/css/main.76ed6af0.css",
+    "main.js": "/portfolio/static/js/main.5c3c1c05.js",
     "static/media/portfolio.png": "/portfolio/static/media/portfolio.ccd0e091f46e560684a0.png",
     "static/media/workout.jpg": "/portfolio/static/media/workout.77179e95d0b593c2642b.jpg",
     "static/media/mountains-night.jpg": "/portfolio/static/media/mountains-night.172c410eddd80594515b.jpg",
@@ -12,11 +12,11 @@
     "static/media/Paulo-Barata-cv-download.pdf": "/portfolio/static/media/Paulo-Barata-cv-download.bed0a833c5567cda7b50.pdf",
     "static/media/neon2.woff": "/portfolio/static/media/neon2.8fc17f61f9327d68f12c.woff",
     "index.html": "/portfolio/index.html",
-    "main.3dab2e25.css.map": "/portfolio/static/css/main.3dab2e25.css.map",
-    "main.06237c46.js.map": "/portfolio/static/js/main.06237c46.js.map"
+    "main.76ed6af0.css.map": "/portfolio/static/css/main.76ed6af0.css.map",
+    "main.5c3c1c05.js.map": "/portfolio/static/js/main.5c3c1c05.js.map"
   },
   "entrypoints": [
-    "static/css/main.3dab2e25.css",
-    "static/js/main.06237c46.js"
+    "static/css/main.76ed6af0.css",
+    "static/js/main.5c3c1c05.js"
   ]
 }
