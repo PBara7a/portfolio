@@ -171,11 +171,11 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ccff0085;
+  background: #add2f466;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ccff00;
+  background: #add2f4bb;
 }

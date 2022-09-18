@@ -115,7 +115,27 @@
 
 @media screen and (max-width: 800px) {
   .contact-section__form {
-    min-width: 95%;
+    width: 100%;
+  }
+
+  .contact-section__form input,
+  .contact-section__form textarea {
+    width: 90%;
+  }
+
+  .contact-section__btn {
+    font-size: 0.6rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-section {
+    padding: 2rem 5%;
+    margin-bottom: 2rem;
+  }
+
+  .contact-section__form {
+    margin-bottom: 1rem;
   }
 
   .contact-section__form input,
