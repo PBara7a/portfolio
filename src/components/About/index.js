@@ -10,7 +10,7 @@ import "./about.css";
 export default function About() {
   return (
     <>
-      <div className="about-me-container">
+      <div className="about-me-container" id="about">
         <div className="about-me__image-container">
           <img className="about-me__image" src={profilePic} alt="profile" />
         </div>

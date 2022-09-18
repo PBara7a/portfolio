@@ -1,19 +1,20 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import cvDownload from "../../assets/Paulo-Barata-cv-download.pdf";
+import ToggleButton from "../../utils/ToggleButton";
 import {
-  FaHome,
   FaUserAstronaut,
   FaRegFileAlt,
   FaLaptopCode,
+  FaSun,
 } from "react-icons/fa";
-import "./header.css";
 import { useTheme } from "../../App";
+import "./header.css";
 
 export default function Header() {
-  const [selected, setSelected] = useState("home");
   const [navbarClass, setNavbarClass] = useState("header");
-  const { toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   const handleScroll = () => {
     if (window.scrollY >= 20) {
@@ -34,44 +35,44 @@ export default function Header() {
       collapseOnSelect={true}
     >
       <Container>
-        <Navbar.Brand as={Link} to="" onClick={() => setSelected("home")}>
+        <Navbar.Brand
+          as={Link}
+          to="root"
+          smooth={true}
+          offset={-50}
+          duration={5}
+          className="header__brand"
+        >
           Pb
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll" className="navbar">
-          <Nav
-            activeKey={selected}
-            onSelect={(selectedLink) => setSelected(selectedLink)}
-          >
-            <Nav.Item>
-              <Nav.Link as={Link} to="" eventKey="home">
-                <FaHome
-                  className="header-icon"
-                  style={{ marginBottom: "0.23rem" }}
-                />{" "}
-                Home
-              </Nav.Link>
-            </Nav.Item>
 
+        <Navbar.Toggle aria-controls="navbarScroll" />
+
+        <Navbar.Collapse id="navbarScroll" className="navbar">
+          <Nav>
             <Nav.Item>
-              <Nav.Link as={Link} to="/about" eventKey="about">
+              <Nav.Link as={Link} to="about" offset={-150}>
                 <FaUserAstronaut className="header-icon" /> About me
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/resume" eventKey="resume">
-                <FaRegFileAlt className="header-icon" /> Resume
+              <Nav.Link as={Link} to="projects">
+                <FaLaptopCode className="header-icon" /> Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="/projects" eventKey="projects">
-                <FaLaptopCode className="header-icon" /> Projects
+              <Nav.Link href={cvDownload} target="_blank">
+                <FaRegFileAlt className="header-icon" /> Resume
               </Nav.Link>
             </Nav.Item>
-            <Nav.Item>
-              <Nav.Link onClick={toggleTheme}>Toggle</Nav.Link>
+
+            <Nav.Item className="toggle-container">
+              <Nav.Link onClick={toggleTheme}>
+                <FaSun className="header-icon" /> Daylight
+              </Nav.Link>
+              <ToggleButton theme={theme} toggleTheme={toggleTheme} />
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

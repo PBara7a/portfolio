@@ -38,18 +38,10 @@
   place-items: center;
 }
 
-#day .custom-btn {
-  position: absolute;
-  bottom: 7%;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  color: #fff;
-  border: 2px solid #fff;
-  background-color: #212529;
-}
-
-#night .custom-btn {
+.custom-btn {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
   position: absolute;
   bottom: 7%;
   width: 80px;
@@ -58,6 +50,17 @@
   color: var(--secondary-highlight);
   border: 2px solid var(--secondary-highlight);
   background-color: #212529;
+  cursor: pointer;
+}
+
+#day .custom-btn {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+#night .custom-btn {
+  color: var(--secondary-highlight);
+  border: 2px solid var(--secondary-highlight);
 }
 
 .custom-btn:hover {
@@ -108,13 +111,7 @@
     font-size: 1.3rem;
   }
 
-  #day .custom-btn {
-    bottom: 10%;
-    height: 60px;
-    width: 60px;
-  }
-
-  #night .custom-btn {
+  .custom-btn {
     bottom: 10%;
     height: 60px;
     width: 60px;

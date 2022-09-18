@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import "./home.css";
 
 const Home = () => {
@@ -20,7 +21,9 @@ const Home = () => {
         </h2>
       </div>
       <div className="btn-container">
-        <button className="custom-btn">▼</button>
+        <Link to="about" offset={-150} className="custom-btn">
+          ▼
+        </Link>
       </div>
     </section>
   );

@@ -13,7 +13,7 @@ const images = {
 
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projects">
       <h1 data-text="Recent projects" className="neon-light">
         Recent pr
         <span data-text="o" className="neon-light-faulty-secondary">
