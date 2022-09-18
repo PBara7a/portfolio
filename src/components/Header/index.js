@@ -57,13 +57,19 @@ export default function Header() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link as={Link} to="projects">
+              <Nav.Link as={Link} to="projects" offset={-150}>
                 <FaLaptopCode className="header-icon" /> Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link href={cvDownload} target="_blank">
+              <Nav.Link as={Link} to="contact">
+                <FaLaptopCode className="header-icon" /> Contact
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link href={cvDownload} target="_blank" active={false}>
                 <FaRegFileAlt className="header-icon" /> Resume
               </Nav.Link>
             </Nav.Item>

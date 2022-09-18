@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import withRouter from "./utils/withRouter";
 import "./App.css";
 
@@ -25,6 +26,7 @@ function App() {
         <Home />
         <About />
         <Projects />
+        <Contact />
         <Footer />
       </div>
     </ThemeContext.Provider>
